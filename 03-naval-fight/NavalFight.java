@@ -19,28 +19,28 @@ public class NavalFight {
         printBoard(board);
 
         // 1 x ship with 4 squares
-        askShip(board, 4);
+        askShipV2(board, 4);
         printBoard(board);
         // 2 x ship with 3 squares
-        askShip(board, 3);
+        askShipV2(board, 3);
         printBoard(board);
-        askShip(board, 3);
+        askShipV2(board, 3);
         printBoard(board);
         // 3 x ship with 2 squares
-        askShip(board, 2);
+        askShipV2(board, 2);
         printBoard(board);
-        askShip(board, 2);
+        askShipV2(board, 2);
         printBoard(board);
-        askShip(board, 2);
+        askShipV2(board, 2);
         printBoard(board);
         // 4 x ship with 1 square
-        askShip(board, 1);
+        askShipV2(board, 1);
         printBoard(board);
-        askShip(board, 1);
+        askShipV2(board, 1);
         printBoard(board);
-        askShip(board, 1);
+        askShipV2(board, 1);
         printBoard(board);
-        askShip(board, 1);
+        askShipV2(board, 1);
         printBoard(board);
 
         while(shipSquaresLeft(board) > 0) {
@@ -211,7 +211,7 @@ public class NavalFight {
             System.out.println("Orientation of ship");
             System.out.println("1 - vertical");
             System.out.println("2 - horizontal");
-            sc.nextInt();
+            option = sc.nextInt();
         }
 
         int endLine;
